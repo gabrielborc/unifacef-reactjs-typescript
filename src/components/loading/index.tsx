@@ -17,6 +17,8 @@ export const loadingOn = () => {
         return;
     }
 
+    console.log("Me Chamaram: loadingOn");
+
     el.style.display = 'block';
     el.setAttribute('data-requests', Number(el.getAttribute('data-requests')) + 1);
 }

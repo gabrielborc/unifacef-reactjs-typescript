@@ -15,7 +15,6 @@ import MainMenu from '../components/main-menu';
 @observer 
 export default class Routes extends React.Component {
     render() {
-        console.log(endpoints);
         return (
             <>
                 <MainMenu />
