@@ -1,10 +1,10 @@
-import * as React from 'react';
+import * as React from "react";
 
-import { inject, observer } from 'mobx-react';
+import { inject, observer } from "mobx-react";
 
-import { Menu } from 'semantic-ui-react';
-import NewRouterStore from '../../mobx/router.store';
-import { endpoints } from '../../routes/endpoints';
+import { Menu } from "semantic-ui-react";
+import NewRouterStore from "../../mobx/router.store";
+import { endpoints } from "../../routes/endpoints";
 
 interface Props {
     router?: NewRouterStore;
@@ -15,8 +15,6 @@ interface Props {
 export default class MainMenu extends React.Component<Props> {
 
     handleItemClick = (_, { url }: any) => {
-        console.log(_); //Question
-        console.log(this.props.router, this.props.router!); //Question
         const { setHistory } = this.props.router!;
         return setHistory(url);
     }
@@ -32,13 +30,13 @@ export default class MainMenu extends React.Component<Props> {
                                 name={item.path?.toString()}
                                 url={item.path!}
                                 onClick={this.handleItemClick}>
-                                    {item.name}
-                                </Menu.Item>
+                                {item.name}
+                            </Menu.Item>
                         })}
                     </Menu>
                 </div>
             </>
-        );
+        )
     }
 
 }

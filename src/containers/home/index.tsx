@@ -1,7 +1,7 @@
 import * as React from 'react';
-
-import { Card, Container, Grid, Header, Icon } from 'semantic-ui-css';
 import { inject, observer } from 'mobx-react';
+
+import { Card, Container, Grid, Header, Icon } from 'semantic-ui-react';
 
 import HomeStore from './store';
 

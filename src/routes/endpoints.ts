@@ -1,6 +1,7 @@
 import { RouteProps } from 'react-router-dom';
-import Sobre from '../containers/sobre';
+
 import Home from '../containers/home';
+import Sobre from '../containers/sobre';
 
 const publicUrl = process.env.PUBLIC_URL;
 
