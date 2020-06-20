@@ -20,7 +20,7 @@ export default class Sobre extends React.Component<Props> {
                         <Grid.Column>
                             <Header color='blue' as='h2'>
                                 <Header.Content>
-                                    Sobr
+                                    Sobre
                                     <Header.Subheader>Um pouco sobre mim</Header.Subheader>
                                 </Header.Content>
                             </Header>

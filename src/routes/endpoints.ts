@@ -4,6 +4,7 @@ import Home from '../containers/home';
 import Sobre from '../containers/sobre';
 
 const publicUrl = process.env.PUBLIC_URL;
+console.log(publicUrl);
 
 interface EndPointsProps extends RouteProps {
     name?: string
