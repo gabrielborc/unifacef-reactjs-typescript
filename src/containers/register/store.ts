@@ -2,7 +2,7 @@ import { observable, action } from 'mobx';
 import { assign } from '../../utils/object.utils';
 
 export default class RegisterStore {
-    @observable zipCode?: number;
+    @observable zipcode?: number;
     @observable github?: string;
 
     @action handleForm = (event: any, select?: any) => {

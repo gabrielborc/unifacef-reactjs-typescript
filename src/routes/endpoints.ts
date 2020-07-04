@@ -21,8 +21,8 @@ export const endpoints: EndPointsProps[] = [
     { path: `${publicUrl}/combustivel`, name: 'Combustível', component: Combustivel, exact: true },
     { path: `${publicUrl}/star-wars`, name: 'Star Wars', component: StarWars, exact: true },
     { path: `${publicUrl}/star-wars/:id`, component: StarWarsDetails, exact: true },
-    { path: `${publicUrl}/sobre`, name: 'Sobre', component: Sobre, exact: true },
     { path: `${publicUrl}/cache`, name: 'Cache', component: Cache, exact: true },
     { path: `${publicUrl}/register`, name: 'Register', component: Register, exact: true },
     { path: `${publicUrl}/tags`, name: 'Tags', component: Tags, exact: true },
+    { path: `${publicUrl}/sobre`, name: 'Sobre', component: Sobre, exact: true },
 ]

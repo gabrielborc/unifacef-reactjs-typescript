@@ -4,6 +4,7 @@ import { inject, observer } from 'mobx-react';
 import NewRouterStore from '../../mobx/router.store';
 import RegisterStore from './store';
 import Cep from '../../components/cep';
+import Github from '../../components/github';
 
 interface Props {
     router: NewRouterStore;
@@ -14,7 +15,7 @@ interface Props {
 @observer
 export default class Register extends React.Component<Props> {
     render() {
-        const { zipCode, handleForm, /*github*/ } = this.props.register;
+        const { zipcode, handleForm, github } = this.props.register;
 
         return (
             <Container>
@@ -34,10 +35,20 @@ export default class Register extends React.Component<Props> {
                     <Form.Group widths='equal' style={{alignItems: 'flex-end'}}>
                         <Form.Field>
                             <label>Informe o CEP:</label>
-                            <input value={zipCode || ''} maxLength={8} name='zipCode' onChange={handleForm} placeholder='Ex 14405123' /> 
+                            <input value={zipcode || ''} maxLength={8} name='zipcode' onChange={handleForm} placeholder='Ex 14405123' /> 
                         </Form.Field>
                         <Form.Field>
-                            <Cep zipCode={zipCode} />
+                            <Cep zipCode={zipcode} />
+                        </Form.Field>
+                    </Form.Group>
+                    <Form.Group widths='equal' style={{alignItems: 'center'}}>
+                        <Form.Field>
+                            <label>Informe o Github:</label>
+                            <input value={github || ''} name='github' onChange={handleForm} placeholder='username' /> 
+                        </Form.Field>
+                        <Form.Field >
+                            <label></label>
+                            <Github userName={github!} />
                         </Form.Field>
                     </Form.Group>
                 </Form>
