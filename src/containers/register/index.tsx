@@ -32,16 +32,17 @@ export default class Register extends React.Component<Props> {
                     </Grid.Row>
                 </Grid>
                 <Form>
-                    <Form.Group widths='equal' style={{alignItems: 'flex-end'}}>
+                    <Form.Group widths='equal'>
                         <Form.Field>
                             <label>Informe o CEP:</label>
                             <input value={zipcode || ''} maxLength={8} name='zipcode' onChange={handleForm} placeholder='Ex 14405123' /> 
                         </Form.Field>
                         <Form.Field>
+                            <label></label>
                             <Cep zipCode={zipcode} />
                         </Form.Field>
                     </Form.Group>
-                    <Form.Group widths='equal' style={{alignItems: 'center'}}>
+                    <Form.Group widths='equal'>
                         <Form.Field>
                             <label>Informe o Github:</label>
                             <input value={github || ''} name='github' onChange={handleForm} placeholder='username' /> 
