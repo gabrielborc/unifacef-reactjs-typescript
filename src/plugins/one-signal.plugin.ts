@@ -3,7 +3,7 @@ import { configs } from '../configs';
 
 const options = {
     autoRegister: true,
-    autoSubscribe: true,
+    autoResubscribe: true,
     notifyButton: { enable: true }
 }
 
