@@ -29,7 +29,7 @@
       "noImplicitAny": false,
       "strictNullChecks": true,
       "suppressImplicitAnyIndexErrors": true,
-      "noUnusedLocals": true,
+      "noUnusedLocals": false,
       "esModuleInterop": true,
       "allowSyntheticDefaultImports": true,
       "resolveJsonModule": true,
