@@ -12,6 +12,7 @@ import Loading from './components/loading';
 
 import * as serviceWorker from './serviceWorker';
 import './plugins/sentry.plugin';
+import './plugins/one-signal.plugin';
 import './apis/axios.api';
 
 import './index.css';

@@ -1,6 +1,9 @@
 import axios from 'axios';
+import { configs } from '../configs';
 
-const baseURL = process.env.REACT_APP_STAR_WARS_BASE_URL;
+const { apis } = configs;
+
+const baseURL = apis.starWars;
 
 export const getFilms = () => {
     return axios.request({ baseURL, url: 'films' });
